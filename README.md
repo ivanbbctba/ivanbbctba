@@ -257,7 +257,6 @@ I'm executing a structured, disciplined career transition focused on high-signal
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ivan-beira-ai-engineer-llm)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ivanbbctba)
 [![Email](https://img.shields.io/badge/Email-ivanbeira@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ivanbeira@gmail.com)
-[![WhatsApp](https://img.shields.io/badge/WhatsApp-%2B55%2041%2099171--0901-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/5541991710901)
 
 **Open to**:
 - Full-time remote AI Engineer / Agentic AI roles (United States, Europe, LATAM)
