@@ -56,29 +56,29 @@ I design and build:
 
 ## 🚀 Production-Ready AI Project Scaffold
 
-### [ai-project-template](https://github.com/ivanbbctba/ai-project-template) — GitHub Template
+### [hbr-apple-leadership-rag](https://github.com/ivanbbctba/hbr-apple-leadership-rag)
 
-A production-ready Python scaffold for **AI-native development**. Multi-agent governance (Planner → Executor → Reviewer), lint-enforced specs, and defense-in-depth guardrails — every PR is a verifiable trace, not a vibe. Fork → Plan → Execute → Review → Ship.
+Focused RAG system that demonstrates best practices through systematic comparison of Raw LLM vs Prompt Engineering vs RAG on a single strategic business document.
 
-[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
-[![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white)](https://docs.claude.com/en/docs/claude-code/overview)
-[![Codex](https://img.shields.io/badge/Codex-412991?style=flat-square&logo=openai&logoColor=white)](https://github.com/openai/codex)
-[![uv](https://img.shields.io/badge/uv-DE5FE9?style=flat-square&logo=astral&logoColor=white)](https://github.com/astral-sh/uv)
-[![ty](https://img.shields.io/badge/ty-DE5FE9?style=flat-square&logo=astral&logoColor=white)](https://github.com/astral-sh/ty)
-[![ruff](https://img.shields.io/badge/ruff-DE5FE9?style=flat-square&logo=astral&logoColor=white)](https://github.com/astral-sh/ruff)
-[![just](https://img.shields.io/badge/just-000000?style=flat-square&logo=just&logoColor=white)](https://github.com/casey/just)
-[![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white)](https://docs.pytest.org/)
-[![pre-commit](https://img.shields.io/badge/pre--commit-FAB040?style=flat-square&logo=precommit&logoColor=white)](https://pre-commit.com/)
-[![Git](https://img.shields.io/badge/Git-2088FF?style=flat-square&logo=git&logoColor=white)](https://git-scm.com/)
-[![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/ivanbbctba/ai-project-template/actions/workflows/ci.yml)
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/ivanbbctba/ai-project-template)
+[![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+[![LangChain](https://img.shields.io/badge/LangChain-RAG-1C3C3C?style=flat-square&logo=langchain&logoColor=white)](https://python.langchain.com/)
+[![OpenAI](https://img.shields.io/badge/OpenAI-gpt--4o--mini-412991?style=flat-square&logo=openai&logoColor=white)](https://openai.com/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-Interactive-ff4b4b?style=flat-square&logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![Pytest](https://img.shields.io/badge/Pytest-Tested-0A9F3C?style=flat-square&logo=pytest&logoColor=white)](https://pytest.org/)
+[![Pydantic](https://img.shields.io/badge/Pydantic-Settings-0A7E3C?style=flat-square&logo=pydantic&logoColor=white)](https://docs.pydantic.dev/)
 
-- **Three-agent system with runtime-enforced role separation** — Planner (Claude Code, read-only Plan Mode), Executor (Codex, workspace-write sandbox), Reviewer (Codex, read-only sandbox); roles enforced by the runtime, not by prompts
-- **Spec-driven flow** — every PR cites a lint-enforced Markdown spec under `docs/specs/` with risk tiers (T0–T3), requirement → test mappings, and red-zone assessment; `lint_spec.py` rejects any spec missing a required section
-- **Defense-in-depth tripwires** — Claude Code lifecycle hooks (PreToolUse → red-zone block, UserPromptSubmit → branch-name guard, Stop → spec-lint guard) layer beneath pre-commit, `just check`, and CI; no safety property has a single point of failure
-- **Schema-validated Reviewer output** — Codex Reviewer emits JSON Schema 2020-12 findings (severity, type, evidence, requirement IDs, confidence) — never prose; malformed reviews auto-route to human, never silently merge
-- **Prompt-injection scanner** runs as part of `just check` against every LLM-input artifact in the repo (specs, persisted MCP outputs, web fetches)
-- **Phased blueprint with explicit exit criteria** — Phases 1–3 implemented (subagents + hooks, spec discipline, reviewer); Phases 4–6 (deterministic Router, telemetry, semi-autonomous endgame) road-mapped in `docs/blueprint.md`
+A clean, well-architected Retrieval-Augmented Generation project built as a **focused showcase** on a single PDF article (*How Apple Is Organized for Innovation* — Harvard Business Review).
+
+### Key Engineering Highlights
+
+- **Three-mode comparison engine**: Systematic side-by-side evaluation of Raw LLM vs Prompt Engineering vs RAG with measurable differences in factual accuracy and grounding.
+- **LLM-as-Judge evaluation**: Automated faithfulness and relevance scoring on every response, moving beyond qualitative assessment.
+- **Token usage & cost observability**: Per-mode tracking with configurable pricing — critical production awareness often missing in portfolio projects.
+- **Modular, testable architecture**: Clear separation via `ResponseEngine`, `ComparisonEngine`, `Evaluation`, and `MetricsCollector`. Comprehensive pytest suite with mocking.
+- **Interactive Streamlit demo**: Custom question support, retrieved context transparency, evaluation scores, and cost/latency breakdown — designed for real exploration, not just screenshots.
+- **Production-minded practices**: Cached retriever, configurable MMR retrieval, structured error handling, Pydantic settings, and conventional commit discipline.
+
+This project showcases end-to-end RAG engineering capabilities valued in AI Engineer and LLM Application roles: document processing, retrieval quality, evaluation strategy, observability, and clean modular design — all applied to a real strategic business document rather than generic toy data.
 
 ---
 
