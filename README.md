@@ -56,6 +56,28 @@ I design and build:
 
 ## 🚀 Production-Ready AI Project Scaffold
 
+### [frontline-clinical-rag](https://github.com/ivanbbctba/frontline-clinical-rag/)
+**Production-ready, guardrailed clinical RAG assistant for frontline healthcare workers**  
+*Layout-aware Merck Manual ingestion • Metadata-rich hybrid retrieval • Deterministic LangGraph safety routing • ADR-governed evaluation*
+
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+[![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)](https://www.langchain.com/)
+[![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&logo=langchain&logoColor=white)](https://www.langchain.com/langgraph)
+[![FAISS](https://img.shields.io/badge/FAISS-FF6B6B?style=flat-square&logo=meta&logoColor=white)](https://github.com/facebookresearch/faiss)
+[![bge-m3](https://img.shields.io/badge/bge--m3-FFD93D?style=flat-square&logo=huggingface&logoColor=black)](https://huggingface.co/BAAI/bge-m3)
+[![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=flat-square&logo=pydantic&logoColor=white)](https://docs.pydantic.dev/)
+[![PyMuPDF](https://img.shields.io/badge/PyMuPDF-00A86B?style=flat-square&logo=python&logoColor=white)](https://pymupdf.readthedocs.io/)
+[![Pipenv](https://img.shields.io/badge/Pipenv-000000?style=flat-square&logo=pypi&logoColor=white)](https://pipenv.pypa.io/)
+[![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white)](https://docs.pytest.org/)
+[![ADR](https://img.shields.io/badge/ADR--Governed-4B2E83?style=flat-square)](https://adr.github.io/)
+
+- Deterministic clinical LangGraph with explicit nodes: `validate_input → retrieve → generate → assess_and_route → format_high_confidence | handle_low_confidence_escalation`
+- Hierarchical Merck Manual chunking with `section_hierarchy`, page provenance, chunk type, and clinical warning metadata
+- Metadata-aware hybrid retrieval using dense FAISS embeddings + sparse BM25-style ranking + Reciprocal Rank Fusion + configurable safety boosts
+- Structured `ClinicalResponse` outputs with citations, disclaimers, confidence, uncertainty fields, warning summaries, and human-review routing
+- Lean deterministic evaluation harness with 12 metrics across four canonical Merck clinical questions
+
+
 ### [hbr-apple-leadership-rag](https://github.com/ivanbbctba/hbr-apple-leadership-rag)
 
 Focused RAG system that demonstrates best practices through systematic comparison of Raw LLM vs Prompt Engineering vs RAG on a single strategic business document.
@@ -129,29 +151,6 @@ A production-ready multi-agent system that detects, triages, resolves, and commu
 - Vector similarity search (Chroma + HuggingFace embeddings) for resolution matching
 - End-to-end pipeline: detection → triage → resolution → customer notification
 - CLI with structured JSON output, terminal reports, and configurable logging — **43 tests passing**
-
-### [ai-ehr-assistant](https://github.com/ivanbbctba/ai-ehr-assistant)
-A production-ready, guardrailed patient-facing AI assistant that explains Electronic Health Records in plain language with strict safety enforcement.
-
-[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
-[![OpenAI](https://custom-icon-badges.demolab.com/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)](https://openai.com/api/)
-[![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)](https://www.langchain.com/)
-[![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&logo=langchain&logoColor=white)](https://www.langchain.com/langgraph)
-[![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=flat-square&logo=sqlite&logoColor=white)](https://sqlite.org)
-[![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=flat-square&logo=pydantic&logoColor=white)](https://github.com/pydantic/pydantic)
-[![uv](https://img.shields.io/badge/uv-DE5FE9?style=flat-square&logo=astral&logoColor=white)](https://github.com/astral-sh/uv)
-[![ty](https://img.shields.io/badge/ty-DE5FE9?style=flat-square&logo=astral&logoColor=white)](https://github.com/astral-sh/ty)
-[![ruff](https://img.shields.io/badge/ruff-DE5FE9?style=flat-square&logo=astral&logoColor=white)](https://github.com/astral-sh/ruff)
-[![just](https://img.shields.io/badge/just-000000?style=flat-square&logo=just&logoColor=white)](https://github.com/casey/just)
-[![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white)](https://docs.pytest.org/)
-[![Git](https://img.shields.io/badge/Git-2088FF?style=flat-square&logo=git&logoColor=white)](https://git-scm.com/)
-[![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/ivanbbctba/ai-ehr-assistant/actions/workflows/ci.yml)
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/ivanbbctba/ai-ehr-assistant)
-
-- ReAct agent with 4-node state machine: agent → tool → validate → policy
-- 11 patient-scoped tools with deterministic safety routing (12 policy rules)
-- 7-dimension validation rubric scored by GPT-4o — **37 tests passing, 10/10 test cases**
-- Multilingual support, health literacy adaptation, PHI protection, and CLI with structured JSON output
 
 ### [ai-rag-knowledge-analyst](https://github.com/ivanbbctba/ai-rag-knowledge-analyst)
 A production-ready RAG pipeline that enables analysts to extract insights from lengthy business reports through natural-language queries.
