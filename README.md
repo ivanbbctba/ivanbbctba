@@ -240,17 +240,6 @@ Additional experience as Council Member (ongoing) at a pharmaceutical compoundin
 
 ---
 
-## What I'm Looking For
-
-Remote AI Engineer / Agentic AI Engineer roles (or strong freelance engagements) where I can:
-- Build reliable multi-agent and RAG systems that solve real operational, legal, or knowledge-work problems
-- Work in domains that value safety, auditability, groundedness, and measurable business impact
-- Collaborate with teams that appreciate both technical depth in modern agentic patterns **and** real business fluency
-
-I'm executing a structured, disciplined career transition focused on high-signal GitHub work, targeted outreach, and production-grade demonstrations — ready to deliver from day one.
-
----
-
 ## Connect & Collaborate
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ivan-beira-ai-engineer-llm)
@@ -258,7 +247,7 @@ I'm executing a structured, disciplined career transition focused on high-signal
 [![Email](https://img.shields.io/badge/Email-ivanbeira@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ivanbeira@gmail.com)
 
 **Open to**:
-- Full-time remote AI Engineer / Agentic AI roles (United States, Europe, LATAM)
+- Full-time AI Engineer / Agentic AI roles (United States, Europe, LATAM)
 - High-impact freelance / contract work on multi-agent systems, RAG pipelines, or production AI tooling
 - Collaborations on secure, evaluated, business-aligned agentic projects
 
