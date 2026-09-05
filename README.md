@@ -56,25 +56,6 @@ I design and build:
 
 ## 🚀 Production-Ready AI Project Scaffold
 
-### [rag-eval-bisect-kit](https://github.com/ivanbbctba/rag-eval-bisect-kit)
-**Portable, CI-friendly RAG evaluation harness with deterministic Layer A gates and config bisect UX**  
-*Prove which retrieval/config change broke labeled cases • Not a domain RAG app*
-
-[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
-[![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white)](https://docs.pytest.org/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![RAG](https://img.shields.io/badge/RAG-evaluation-1C3C3C?style=flat-square)](https://github.com/ivanbbctba/rag-eval-bisect-kit)
-[![CI](https://img.shields.io/github/actions/workflow/status/ivanbbctba/rag-eval-bisect-kit/ci.yml?style=flat-square&label=CI)](https://github.com/ivanbbctba/rag-eval-bisect-kit/actions/workflows/ci.yml)
-[![bisect](https://img.shields.io/badge/bisect-config%20snapshots-d29922?style=flat-square)](https://github.com/ivanbbctba/rag-eval-bisect-kit)
-[![ADR](https://img.shields.io/badge/ADR-4B2E83?style=flat-square)](https://github.com/ivanbbctba/rag-eval-bisect-kit/blob/main/docs/adr/0001-layer-a-metric-design.md)
-
-- CLI: `rag-eval run` / `compare` / `bisect` over ordered config snapshots
-- Layer A deterministic metrics (hit/recall, must_mention, forbidden, citation_support) — no LLM judge for the gate
-- MockRetriever + toy corpus; clone-and-run with zero API keys
-- FastAPI GET /health + POST /eval/run; GitHub Actions CI green
-- Credits [frontline-clinical-rag ADR-009](https://github.com/ivanbbctba/frontline-clinical-rag/blob/main/docs/adr/ADR-009.md) Layer A determinism without duplicating clinical RAG
-
-
 ### [frontline-clinical-rag](https://github.com/ivanbbctba/frontline-clinical-rag/)
 **Production-ready, guardrailed clinical RAG assistant for frontline healthcare workers**  
 *Layout-aware Merck Manual ingestion • Metadata-rich hybrid retrieval • Deterministic LangGraph safety routing • ADR-governed evaluation*
@@ -124,6 +105,24 @@ This project showcases end-to-end RAG engineering capabilities valued in AI Engi
 ---
 
 ## AI Portfolio & Tooling
+
+### [rag-eval-bisect-kit](https://github.com/ivanbbctba/rag-eval-bisect-kit)
+**Portable, CI-friendly RAG evaluation harness with deterministic Layer A gates and config bisect UX**  
+*Prove which retrieval/config change broke labeled cases • Not a domain RAG app*
+
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+[![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white)](https://docs.pytest.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![RAG](https://img.shields.io/badge/RAG-evaluation-1C3C3C?style=flat-square)](https://github.com/ivanbbctba/rag-eval-bisect-kit)
+[![CI](https://img.shields.io/github/actions/workflow/status/ivanbbctba/rag-eval-bisect-kit/ci.yml?style=flat-square&label=CI)](https://github.com/ivanbbctba/rag-eval-bisect-kit/actions/workflows/ci.yml)
+[![bisect](https://img.shields.io/badge/bisect-config%20snapshots-d29922?style=flat-square)](https://github.com/ivanbbctba/rag-eval-bisect-kit)
+[![ADR](https://img.shields.io/badge/ADR-4B2E83?style=flat-square)](https://github.com/ivanbbctba/rag-eval-bisect-kit/blob/main/docs/adr/0001-layer-a-metric-design.md)
+
+- CLI: `rag-eval run` / `compare` / `bisect` over ordered config snapshots
+- Layer A deterministic metrics (hit/recall, must_mention, forbidden, citation_support) — no LLM judge for the gate
+- MockRetriever + toy corpus; clone-and-run with zero API keys
+- FastAPI GET /health + POST /eval/run; GitHub Actions CI green
+- Credits [frontline-clinical-rag ADR-009](https://github.com/ivanbbctba/frontline-clinical-rag/blob/main/docs/adr/ADR-009.md) Layer A determinism without duplicating clinical RAG
 
 ### [ai-toolkit](https://github.com/ivanbbctba/ai-toolkit)
 A local-first AI CLI toolkit for creating, running, evaluating, and managing agent and RAG projects with reproducible structure and metadata-aware lifecycle management.
